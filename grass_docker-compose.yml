@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  grass:
+    image: camislav/grass
+    container_name: Grass
+    ports:
+      - "8080:80"
+    environment:
+      - GRASS_USER=sree.0748@gmail.com
+      - GRASS_PASS=password
+      - ALLOW_DEBUG=False
+    restart: unless-stopped
